@@ -1,0 +1,25 @@
+#spring:
+#  application:
+#    name: interview-ai
+spring:
+  datasource:
+    url: jdbc:postgresql://ep-old-wind-aif32fp3-pooler.c-4.us-east-1.aws.neon.tech/neondb?sslmode=require
+    username: neondb_owner
+    password: npg_POS6b1dUYhvV
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+server:
+  port: 8082
+
